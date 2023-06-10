@@ -1,0 +1,35 @@
+<button (click)="listar()">Listar</button>
+
+<ul>
+  <li *ngFor="let filme of listaFilmes ">
+    <span (click)="selecionar(filme)" >{{filme.title}} </span>
+    <span (click)="remover(filme.id)"><b>X</b></span>
+  </li>
+</ul>
+
+<div>
+
+  <input type="text" [(ngModel)] = "filme.title" placeholder="Título">
+  <br><br>
+  <input type="text" [(ngModel)] = "filme.descricao" placeholder="Descrição">
+  <br><br>
+  <input type="text" [(ngModel)] = "filme.author" placeholder="Autor">
+  <br><br>
+  <input type="text" [(ngModel)] = "filme.avaliacao" placeholder="Avaliação">
+  <br><br>
+  <input type="text" [(ngModel)] = "filme.cartaz" placeholder="Cartaz">
+  <br><br>
+  <input type="text" [(ngModel)] = "filme.genero" placeholder="Gênero">
+  <br><br>
+  <input type="text" [(ngModel)] = "filme.cor" placeholder="Cor">
+  <br><br>
+  <input type="text" [(ngModel)] = "filme.vizualiado" placeholder="vizualiado">
+  <br><br>
+  <input type="number" [(ngModel)] = "filme.nota" placeholder="Nota">
+  <br><br>
+
+  <button (click)="cancelar()">cancelar</button>
+  <br>
+  <button (click)="salvar()">Salvar</button>
+
+</div>

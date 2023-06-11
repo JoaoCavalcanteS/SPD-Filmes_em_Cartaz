@@ -6,11 +6,23 @@
       "descricao": "Uma cobra grande comendo todo mundo na floresta",
       "author": "João",
       "avaliacao": "filme chato, só tem uma cobra grande que come todo mundo",
-      "cartaz": "url.png",
+      "cartaz": "https://br.web.img3.acsta.net/pictures/14/03/21/22/36/234209.jpg",
       "genero": "Ação",
       "cor": "laranja",
       "vizualiado": "",
       "nota": 0
+    },
+    {
+      "id": 2,
+      "title": "shrek 2",
+      "descricao": "bom filme",
+      "author": "João",
+      "avaliacao": "10",
+      "cartaz": "https://upload.wikimedia.org/wikipedia/pt/7/78/Shrek_2_Poster.jpg",
+      "genero": "Animação",
+      "cor": "verde",
+      "vizualiado": "1",
+      "nota": 2
     }
   ]
 }

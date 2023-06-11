@@ -14,12 +14,27 @@
   /* --------------------------------------------- */
   .example-button-row button,
   .example-button-row a {
-    margin-right: 8px;
+    margin-right: 2%;
     position: fixed;
-    top: 95%;
-    right: 15%;
+    top: 91%;
+    right: 1%;
+    width: 10%;
   }
   
   .example-disabled {
     display: inline-flex;
+  }
+
+  /* -------------------------------------------- */
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+  /* -------------------------------------------- */
+.menu-card{
+    left: 85%;
+    position: absolute;
+    top: -0.3%;
+
   }

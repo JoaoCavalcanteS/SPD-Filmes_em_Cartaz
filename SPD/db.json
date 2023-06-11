@@ -6,7 +6,7 @@
       "descricao": "Uma cobra grande comendo todo mundo na floresta",
       "author": "João",
       "avaliacao": "filme chato, só tem uma cobra grande que come todo mundo",
-      "cartaz": "https://br.web.img3.acsta.net/pictures/14/03/21/22/36/234209.jpg",
+      "cartaz": "https://media.fstatic.com/tLWMRFJj9rXy8qmzclVxgqndsDY=/210x312/smart/filters:format(webp)/media/movies/covers/2011/11/a01a5d9340e102232fc6276b4009154c.jpg",
       "genero": "Ação",
       "cor": "laranja",
       "vizualiado": "",
@@ -23,6 +23,18 @@
       "cor": "verde",
       "vizualiado": "1",
       "nota": 2
+    },
+    {
+      "id": 3,
+      "title": "homem aranha",
+      "descricao": "Filme do espetacular homem aranha e suas aventuras com seus amigos",
+      "author": "Alan Ferreira",
+      "avaliacao": "Exelente",
+      "cartaz": "https://sm.ign.com/ign_br/screenshot/default/image002_uuhb.jpg",
+      "genero": "Animação",
+      "cor": "vermelha",
+      "vizualiado": "5",
+      "nota": 6
     }
   ]
 }

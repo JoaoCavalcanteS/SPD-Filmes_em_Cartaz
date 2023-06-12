@@ -20,7 +20,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
-
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -43,6 +43,7 @@ import {MatInputModule} from '@angular/material/input';
     MatDatepickerModule,
     MatNativeDateModule,
     MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -54,3 +55,5 @@ export class AppModule {
 export class ExpansionOverviewExample {
   panelOpenState = false;
 }
+
+

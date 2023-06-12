@@ -119,45 +119,37 @@
 
       </mat-expansion-panel-header>
 
-      <div class="login">
+      <!-- <div class="login">
         <div>
-          <input type="text" [(ngModel)] = "filme.title" placeholder="Título">
-          <input class="inputLogin" type="text" name="nome">
+          <input class="inputLogin" type="text" [(ngModel)] = "filme.title" placeholder="Título">
         </div>
 
         <div>
-          <input type="text" [(ngModel)] = "filme.descricao" placeholder="Descrição">
-          <input class="inputLogin" type="text" name="nome">
+          <input class="inputLogin" type="text" [(ngModel)] = "filme.descricao" placeholder="Descrição">
         </div>
 
         <div>
-          <input type="text" [(ngModel)] = "filme.author" placeholder="Autor">
-          <input class="inputLogin" type="text" name="nome">
+          <input class="inputLogin" type="text" [(ngModel)] = "filme.author" placeholder="Autor">
         </div>
 
         <div>
-          <input type="text" [(ngModel)] = "filme.avaliacao" placeholder="Avaliação">
-          <input class="inputLogin" type="text" name="nome">
+          <input class="inputLogin" type="text" [(ngModel)] = "filme.avaliacao" placeholder="Avaliação">
         </div>
 
         <div>
-          <input type="text" [(ngModel)] = "filme.cartaz" placeholder="Cartaz">
-          <input class="inputLogin" type="text" name="nome">
+          <input class="inputLogin" type="text" [(ngModel)] = "filme.cartaz" placeholder="Cartaz">
         </div>
 
         <div>
-          <input type="text" [(ngModel)] = "filme.genero" placeholder="Gênero">
-          <input class="inputLogin" type="text" name="nome">
+          <input class="inputLogin" type="text" [(ngModel)] = "filme.genero" placeholder="Gênero">
         </div>
 
         <div>
-          <input type="text" [(ngModel)] = "filme.cor" placeholder="Cor">
-          <input class="inputLogin" type="text" name="nome">
+          <input class="inputLogin" type="text" [(ngModel)] = "filme.cor" placeholder="Cor">
         </div>
 
         <div>
-          <input type="text" [(ngModel)] = "filme.vizualiado" placeholder="vizualiado">
-          <input class="inputLogin" type="text" name="nome">
+          <input class="inputLogin" type="text" [(ngModel)] = "filme.vizualiado" placeholder="vizualiado">
         </div>
       </div>
 
@@ -174,7 +166,49 @@
 
       <button (click)="cancelar()">cancelar</button>
       <br>
-      <button (click)="salvar()">Salvar</button>
+      <button (click)="salvar()">Salvar</button> -->
+
+      
+        <mat-list role="list">
+          <mat-list-item role="listitem">
+            <input type="text" [(ngModel)] = "filme.title" placeholder="Título"></mat-list-item>
+
+          <mat-list-item role="listitem">
+            <input type="text" [(ngModel)] = "filme.descricao" placeholder="Descrição"></mat-list-item>
+
+          <mat-list-item role="listitem">
+            <input type="text" [(ngModel)] = "filme.author" placeholder="Autor"></mat-list-item>
+
+        
+          <mat-list-item role="listitem">
+            <input type="text" [(ngModel)] = "filme.avaliacao" placeholder="Avaliação"></mat-list-item>
+
+          <mat-list-item role="listitem"><input type="text" [(ngModel)] = "filme.cartaz" placeholder="Cartaz"></mat-list-item>
+
+          <mat-list-item role="listitem">
+            <input type="text" [(ngModel)] = "filme.genero" placeholder="Gênero"></mat-list-item>
+
+            <mat-list-item role="listitem">
+              <input type="text" [(ngModel)] = "filme.cor" placeholder="Cor"></mat-list-item>
+
+            <mat-list-item role="listitem">
+              <select name="" id="" [(ngModel)] = "filme.vizualiado">
+              <option value="Quero">Quero</option>
+              <option value="Tenho">Tenho</option>
+              <option value="Terminado">Terminado</option>
+            </select></mat-list-item>
+
+            <mat-list-item role="listitem">
+              <input type="number" [(ngModel)] = "filme.nota" placeholder="Nota">
+            </mat-list-item>
+
+            <mat-list-item role="listitem"> 
+              <button (click)="cancelar()">cancelar</button>
+              <button (click)="salvar()">Salvar</button>
+            </mat-list-item>
+
+        </mat-list>
+      
     </mat-expansion-panel>
   </mat-accordion>
 

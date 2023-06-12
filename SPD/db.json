@@ -35,6 +35,30 @@
       "cor": "vermelha",
       "vizualiado": "5",
       "nota": 6
+    },
+    {
+      "id": 4,
+      "title": "Noiva cadaver ",
+      "descricao": "Infantil",
+      "author": "Daniel",
+      "avaliacao": "Filme sobre uma historia de romance",
+      "cartaz": "https://i.pinimg.com/236x/ae/23/5e/ae235ec569716209cb13e2e4111a38d4--corpse-bride-movie-tim-burton-corpse-bride.jpg",
+      "genero": "Livre",
+      "cor": "verde",
+      "vizualiado": "Quero",
+      "nota": 2
+    },
+    {
+      "id": 5,
+      "title": "Noiva cadaver ",
+      "descricao": "Infantil",
+      "author": "Daniel",
+      "avaliacao": "Filme sobre uma historia de romance",
+      "cartaz": "https://i.pinimg.com/236x/ae/23/5e/ae235ec569716209cb13e2e4111a38d4--corpse-bride-movie-tim-burton-corpse-bride.jpg",
+      "genero": "Livre",
+      "cor": "verde",
+      "vizualiado": "Quero",
+      "nota": 2
     }
   ]
 }

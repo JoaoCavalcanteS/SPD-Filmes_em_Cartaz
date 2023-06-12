@@ -3,6 +3,7 @@
     min-width: 400px;
     float: left;
     margin:3%;
+    margin-top: 10%;
   }
   
   .example-header-image {
@@ -38,3 +39,46 @@
     top: -0.3%;
 
   }
+
+  /* ----------------------------------------------- */
+  .mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+    
+  }
+
+  .mat-accordion{
+    margin-left: 8px;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    /* margin-bottom: 20%; */
+  }
+
+.button-meio{
+  margin-left: 8px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 50%;
+}
+
+/* ------------------------------------ */
+.login{
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding: 80px;
+  border-radius: 30px;
+  color:white;
+}
+
+.inputLogin{
+  padding: 10px;
+  border:none;
+  outline: none;
+  font-size: 15px;
+  color: black;
+}

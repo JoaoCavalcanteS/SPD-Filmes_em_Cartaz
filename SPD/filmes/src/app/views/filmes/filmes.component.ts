@@ -9,6 +9,10 @@ import { FilmesService } from 'src/app/service/filmes.service';
   styleUrls: ['./filmes.component.css']
 })
 export class FilmesComponent implements OnInit{
+      panelOpenState = false;
+      
+      aberto = false;
+
       listaFilmes: Filmes[] = [];
 
       filme = new Filmes();
@@ -64,5 +68,10 @@ export class FilmesComponent implements OnInit{
       cancelar() {
         this.estaEditando = false;
         this.filme = new Filmes();
+      }
+
+      cadastrar(on:boolean) {
+        this.aberto = true;
+        
       }
 }

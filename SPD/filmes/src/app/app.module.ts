@@ -22,6 +22,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 
+import {Component} from '@angular/core';
+import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +46,8 @@ import {MatListModule} from '@angular/material/list';
     MatDatepickerModule,
     MatNativeDateModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -55,5 +59,11 @@ export class AppModule {
 export class ExpansionOverviewExample {
   panelOpenState = false;
 }
+
+export class DialogAnimationsExampleDialog {
+  constructor(public dialogRef: MatDialogRef<DialogAnimationsExampleDialog>) {}
+}
+
+
 
 

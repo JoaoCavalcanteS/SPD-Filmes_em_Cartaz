@@ -2,7 +2,7 @@
   "filmes": [
     {
       "id": 1,
-      "title": "Anaconda",
+      "title": "Anaconda 2",
       "descricao": "Uma cobra grande comendo todo mundo na floresta",
       "author": "João",
       "avaliacao": "filme chato, só tem uma cobra grande que come todo mundo",
@@ -38,18 +38,6 @@
     },
     {
       "id": 4,
-      "title": "Noiva cadaver ",
-      "descricao": "Infantil",
-      "author": "Daniel",
-      "avaliacao": "Filme sobre uma historia de romance",
-      "cartaz": "https://i.pinimg.com/236x/ae/23/5e/ae235ec569716209cb13e2e4111a38d4--corpse-bride-movie-tim-burton-corpse-bride.jpg",
-      "genero": "Livre",
-      "cor": "verde",
-      "vizualiado": "Quero",
-      "nota": 2
-    },
-    {
-      "id": 5,
       "title": "Noiva cadaver ",
       "descricao": "Infantil",
       "author": "Daniel",

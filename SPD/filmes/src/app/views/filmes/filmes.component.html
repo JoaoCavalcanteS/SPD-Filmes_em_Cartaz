@@ -1,4 +1,4 @@
-<!-- 
+<!--
 <button (click)="listar()">Listar</button>
 
 <ul>
@@ -8,37 +8,6 @@
   </li>
 </ul>
 
-<div>
-
-  <input type="text" [(ngModel)] = "filme.title" placeholder="Título">
-  <br><br>
-  <input type="text" [(ngModel)] = "filme.descricao" placeholder="Descrição">
-  <br><br>
-  <input type="text" [(ngModel)] = "filme.author" placeholder="Autor">
-  <br><br>
-  <input type="text" [(ngModel)] = "filme.avaliacao" placeholder="Avaliação">
-  <br><br>
-  <input type="text" [(ngModel)] = "filme.cartaz" placeholder="Cartaz">
-  <br><br>
-  <input type="text" [(ngModel)] = "filme.genero" placeholder="Gênero">
-  <br><br>
-  <input type="text" [(ngModel)] = "filme.cor" placeholder="Cor">
-  <br><br>
-  <input type="text" [(ngModel)] = "filme.vizualiado" placeholder="vizualiado">
-  <select name="" id="" [(ngModel)] = "filme.vizualiado">
-  <option value="Quero">Quero</option>
-  <option value="Tenho">Tenho</option>
-  <option value="Terminado">Terminado</option>
-</select>
-  <br><br>
-  <input type="number" [(ngModel)] = "filme.nota" placeholder="Nota">
-  <br><br>
-  <label for="">Imagem do filme</label>
-  <img src="{{filme.cartaz}}" alt="">
-
-  <button (click)="cancelar()">cancelar</button>
-  <br>
-  <button (click)="salvar()">Salvar</button>
 
 </div> -->
 
@@ -59,52 +28,115 @@
 </p>
 
 <!-- -------------------------------------------- -->
+<div *ngIf="estaEditando == false">
+    <div *ngFor="let filme of listaFilmes">
 
-<div *ngFor="let filme of listaFilmes">
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <!-- <div mat-card-avatar class="example-header-image"></div> -->
+          <mat-card-title>{{filme.title}}</mat-card-title>
+
+          <div class="menu-card">
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span (click)="selecionar(filme)">Atualizar {{filme.title}}</span>
+              </button>
+              <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+              </button>
+              <!-- <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+              </button> -->
+            </mat-menu>
+          </div>
+          <!-- <mat-card-subtitle>2023</mat-card-subtitle> -->
+        </mat-card-header>
+        <img mat-card-image src="{{filme.cartaz}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{filme.descricao}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Curtir</button>
+          <button mat-raised-button color="warn">Descrição</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+</div>
+<div *ngIf="estaEditando != false" >
+  <div *ngFor="let filme of listaFilmes">
 
 
-  <mat-card class="example-card">
-    <mat-card-header>
-      <!-- <div mat-card-avatar class="example-header-image"></div> -->
-      <mat-card-title>{{filme.title}}</mat-card-title>
+    <mat-card class="example-card">
+      <mat-list role="list">
+        <mat-list-item role="listitem">
+          <input type="text" [(ngModel)] = "filme.title" placeholder="Título">
+        </mat-list-item>
 
-      <div class="menu-card">
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item>
-            <mat-icon>dialpad</mat-icon>
-            <span>Redial</span>
-          </button>
-          <button mat-menu-item disabled>
-            <mat-icon>voicemail</mat-icon>
-            <span>Check voice mail</span>
-          </button>
-          <!-- <button mat-menu-item>
-            <mat-icon>notifications_off</mat-icon>
-            <span>Disable alerts</span>
-          </button> -->
-        </mat-menu>
-      </div>
-      <!-- <mat-card-subtitle>2023</mat-card-subtitle> -->
-    </mat-card-header>
-    <img mat-card-image src="{{filme.cartaz}}" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        {{filme.descricao}}
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button color="primary">Curtir</button>
-      <button mat-raised-button color="warn">Descrição</button>
-    </mat-card-actions>
-  </mat-card>
+        <mat-list-item role="listitem">
+          <input type="text" [(ngModel)] = "filme.descricao" placeholder="Descrição">
+        </mat-list-item>
 
+        <mat-list-item role="listitem">
+          <input type="text" [(ngModel)] = "filme.author" placeholder="Autor">
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+          <input type="text" [(ngModel)] = "filme.avaliacao" placeholder="Avaliação">
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+          <input type="text" [(ngModel)] = "filme.cartaz" placeholder="Cartaz">
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+          <input type="text" [(ngModel)] = "filme.genero" placeholder="Gênero">
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+          <input type="text" [(ngModel)] = "filme.cor" placeholder="Cor">
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+          <label for="">Status</label>
+          <select name="s" id="" [(ngModel)] = "filme.vizualiado" placeholder="status">
+            <option value="Quero">Quero</option>
+            <option value="Tenho">Tenho</option>
+            <option value="Terminado">Terminado</option>
+          </select>
+      </mat-list-item>
+
+        <mat-list-item role="listitem">
+          <input type="number" [(ngModel)] = "filme.nota" placeholder="Nota">
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+          <button (click)="cancelar()">voltar</button>
+          <button (click)="salvar()">Salvar</button>
+          <button (click)="remover(filme.id)"><b>remover</b></button>
+        </mat-list-item>
+
+    </mat-list>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Curtir</button>
+        <button mat-raised-button color="warn">Descrição</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
 </div>
 
-<div class="example-button-row">cd
-  <button mat-raised-button color="warn">Cadastrar</button> 
+<div>
+  <!-- <button mat-raised-button color="warn">Cadastrar</button> -->
   <mat-accordion>
     <mat-expansion-panel hideToggle>
       <mat-expansion-panel-header>
@@ -114,102 +146,63 @@
         </mat-panel-description>
 
         <mat-panel-title>
-          
+
         </mat-panel-title>
 
       </mat-expansion-panel-header>
 
-      <!-- <div class="login">
-        <div>
-          <input class="inputLogin" type="text" [(ngModel)] = "filme.title" placeholder="Título">
-        </div>
 
-        <div>
-          <input class="inputLogin" type="text" [(ngModel)] = "filme.descricao" placeholder="Descrição">
-        </div>
-
-        <div>
-          <input class="inputLogin" type="text" [(ngModel)] = "filme.author" placeholder="Autor">
-        </div>
-
-        <div>
-          <input class="inputLogin" type="text" [(ngModel)] = "filme.avaliacao" placeholder="Avaliação">
-        </div>
-
-        <div>
-          <input class="inputLogin" type="text" [(ngModel)] = "filme.cartaz" placeholder="Cartaz">
-        </div>
-
-        <div>
-          <input class="inputLogin" type="text" [(ngModel)] = "filme.genero" placeholder="Gênero">
-        </div>
-
-        <div>
-          <input class="inputLogin" type="text" [(ngModel)] = "filme.cor" placeholder="Cor">
-        </div>
-
-        <div>
-          <input class="inputLogin" type="text" [(ngModel)] = "filme.vizualiado" placeholder="vizualiado">
-        </div>
-      </div>
-
-      <select name="" id="" [(ngModel)] = "filme.vizualiado">
-      <option value="Quero">Quero</option>
-      <option value="Tenho">Tenho</option>
-      <option value="Terminado">Terminado</option>
-    </select>
-      <br><br>
-      <input type="number" [(ngModel)] = "filme.nota" placeholder="Nota">
-      <br><br>
-      <label for="">Imagem do filme</label>
-      <img src="{{filme.cartaz}}" alt="">
-
-      <button (click)="cancelar()">cancelar</button>
-      <br>
-      <button (click)="salvar()">Salvar</button> -->
-
-      
         <mat-list role="list">
-          <mat-list-item role="listitem">
-            <input type="text" [(ngModel)] = "filme.title" placeholder="Título"></mat-list-item>
-
-          <mat-list-item role="listitem">
-            <input type="text" [(ngModel)] = "filme.descricao" placeholder="Descrição"></mat-list-item>
-
-          <mat-list-item role="listitem">
-            <input type="text" [(ngModel)] = "filme.author" placeholder="Autor"></mat-list-item>
-
-        
-          <mat-list-item role="listitem">
-            <input type="text" [(ngModel)] = "filme.avaliacao" placeholder="Avaliação"></mat-list-item>
-
-          <mat-list-item role="listitem"><input type="text" [(ngModel)] = "filme.cartaz" placeholder="Cartaz"></mat-list-item>
-
-          <mat-list-item role="listitem">
-            <input type="text" [(ngModel)] = "filme.genero" placeholder="Gênero"></mat-list-item>
+            <mat-list-item role="listitem">
+              <input type="text" [(ngModel)] = "filme.title" placeholder="Título">
+            </mat-list-item>
 
             <mat-list-item role="listitem">
-              <input type="text" [(ngModel)] = "filme.cor" placeholder="Cor"></mat-list-item>
+              <input type="text" [(ngModel)] = "filme.descricao" placeholder="Descrição">
+            </mat-list-item>
 
             <mat-list-item role="listitem">
-              <select name="" id="" [(ngModel)] = "filme.vizualiado">
-              <option value="Quero">Quero</option>
-              <option value="Tenho">Tenho</option>
-              <option value="Terminado">Terminado</option>
-            </select></mat-list-item>
+              <input type="text" [(ngModel)] = "filme.author" placeholder="Autor">
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <input type="text" [(ngModel)] = "filme.avaliacao" placeholder="Avaliação">
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <input type="text" [(ngModel)] = "filme.cartaz" placeholder="Cartaz">
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <input type="text" [(ngModel)] = "filme.genero" placeholder="Gênero">
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <input type="text" [(ngModel)] = "filme.cor" placeholder="Cor">
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <label for="">Status</label>
+              <select name="s" id="" [(ngModel)] = "filme.vizualiado" placeholder="status">
+                <option value="Quero">Quero</option>
+                <option value="Tenho">Tenho</option>
+                <option value="Terminado">Terminado</option>
+              </select>
+          </mat-list-item>
 
             <mat-list-item role="listitem">
               <input type="number" [(ngModel)] = "filme.nota" placeholder="Nota">
             </mat-list-item>
 
-            <mat-list-item role="listitem"> 
+            <mat-list-item role="listitem">
               <button (click)="cancelar()">cancelar</button>
               <button (click)="salvar()">Salvar</button>
             </mat-list-item>
 
         </mat-list>
-      
+
     </mat-expansion-panel>
+
   </mat-accordion>
 
 </div>

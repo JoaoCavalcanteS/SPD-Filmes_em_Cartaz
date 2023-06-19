@@ -60,13 +60,13 @@
         </mat-card-header>
         <img mat-card-image src="{{filme.cartaz}}" alt="Photo of a Shiba Inu">
         <mat-card-content>
-          <p>
+          <p row="1">
             {{filme.descricao}}
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-raised-button color="primary">Curtir</button>
-          <button mat-raised-button color="warn">Descrição</button>
+          <!-- --------------------- -->
+          <button mat-raised-button color="primary">{{filme.vizualiado}}</button>
         </mat-card-actions>
       </mat-card>
 
@@ -106,6 +106,7 @@
           <input type="text" [(ngModel)] = "filme.cor" placeholder="Cor">
         </mat-list-item>
 
+        <!-- ------------- -->
         <mat-list-item role="listitem">
           <label for="">Status</label>
           <select name="s" id="" [(ngModel)] = "filme.vizualiado" placeholder="status">

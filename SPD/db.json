@@ -9,8 +9,8 @@
       "cartaz": "https://media.fstatic.com/tLWMRFJj9rXy8qmzclVxgqndsDY=/210x312/smart/filters:format(webp)/media/movies/covers/2011/11/a01a5d9340e102232fc6276b4009154c.jpg",
       "genero": "Ação",
       "cor": "laranja",
-      "vizualiado": "",
-      "nota": 0
+      "vizualiado": "Terminado",
+      "nota": 1
     },
     {
       "id": 2,
@@ -21,19 +21,19 @@
       "cartaz": "https://upload.wikimedia.org/wikipedia/pt/7/78/Shrek_2_Poster.jpg",
       "genero": "Animação",
       "cor": "verde",
-      "vizualiado": "1",
+      "vizualiado": "Tenho",
       "nota": 2
     },
     {
       "id": 3,
-      "title": "homem aranha",
+      "title": "homem aranha 2",
       "descricao": "Filme do espetacular homem aranha e suas aventuras com seus amigos",
       "author": "Alan Ferreira",
       "avaliacao": "Exelente",
       "cartaz": "https://sm.ign.com/ign_br/screenshot/default/image002_uuhb.jpg",
       "genero": "Animação",
       "cor": "vermelha",
-      "vizualiado": "5",
+      "vizualiado": "Terminado",
       "nota": 6
     },
     {
@@ -46,6 +46,30 @@
       "genero": "Livre",
       "cor": "verde",
       "vizualiado": "Quero",
+      "nota": 2
+    },
+    {
+      "id": 5,
+      "title": "tetonic",
+      "descricao": "filme foda ",
+      "author": "Joao",
+      "avaliacao": "10",
+      "cartaz": "https://live.staticflickr.com/3647/3378392452_ff70787d79_b.jpg",
+      "genero": "adulto",
+      "cor": "vermelho",
+      "vizualiado": "Quero",
+      "nota": 1
+    },
+    {
+      "id": 6,
+      "title": "Harry potter ",
+      "descricao": "aventuta de um menino magico ",
+      "author": "Fulino",
+      "avaliacao": "Boa ",
+      "cartaz": "https://m.media-amazon.com/images/I/81IrvFQrwKL._AC_UF894,1000_QL80_.jpg",
+      "genero": "aventura ",
+      "cor": "vermelho",
+      "vizualiado": "Tenho",
       "nota": 2
     }
   ]

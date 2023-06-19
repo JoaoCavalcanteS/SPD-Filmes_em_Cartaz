@@ -1,76 +1,76 @@
 {
   "filmes": [
     {
-      "id": 1,
-      "title": "Anaconda ",
-      "descricao": "Uma cobra grande comendo todo mundo na floresta",
-      "author": "João",
-      "avaliacao": "filme chato, só tem uma cobra grande que come todo mundo",
-      "cartaz": "https://media.fstatic.com/tLWMRFJj9rXy8qmzclVxgqndsDY=/210x312/smart/filters:format(webp)/media/movies/covers/2011/11/a01a5d9340e102232fc6276b4009154c.jpg",
-      "genero": "Ação",
-      "cor": "laranja",
-      "vizualiado": "Terminado",
-      "nota": 1
-    },
-    {
-      "id": 2,
-      "title": "shrek 2",
-      "descricao": "bom filme",
-      "author": "João",
-      "avaliacao": "10",
-      "cartaz": "https://upload.wikimedia.org/wikipedia/pt/7/78/Shrek_2_Poster.jpg",
-      "genero": "Animação",
-      "cor": "verde",
-      "vizualiado": "Tenho",
-      "nota": 2
-    },
-    {
       "id": 3,
-      "title": "homem aranha 2",
-      "descricao": "Filme do espetacular homem aranha e suas aventuras com seus amigos",
+      "title": "Homem aranha 2",
+      "descricao": "Miles Morales está de volta para o próximo capítulo da saga vencedora do Oscar. Depois de se reunir com Gwen Stacy, o amigão da vizinhança e protetor em tempo integral do Brooklyn é catapultado através do Multiverso, onde ele encontra um time de Pessoas-Aranha que precisam proteger a própria existência. Quando os heróis não conseguem se unir para lidar com uma nova ameaça, Miles se vê dividido e precisa redefinir o que significa ser um herói para que ele consiga salvar as pessoas que mais ama. Acessibilidade compatível com App Movie Reading para pessoas com deficiência visual ou auditiva.",
       "author": "Alan Ferreira",
       "avaliacao": "Exelente",
       "cartaz": "https://sm.ign.com/ign_br/screenshot/default/image002_uuhb.jpg",
       "genero": "Animação",
       "cor": "vermelha",
-      "vizualiado": "Terminado",
+      "vizualiado": "Quero",
       "nota": 6
     },
     {
       "id": 4,
-      "title": "Noiva cadaver ",
-      "descricao": "Infantil",
-      "author": "Daniel",
-      "avaliacao": "Filme sobre uma historia de romance",
-      "cartaz": "https://i.pinimg.com/236x/ae/23/5e/ae235ec569716209cb13e2e4111a38d4--corpse-bride-movie-tim-burton-corpse-bride.jpg",
-      "genero": "Livre",
-      "cor": "verde",
-      "vizualiado": "Quero",
-      "nota": 2
-    },
-    {
-      "id": 5,
-      "title": "tetonic",
-      "descricao": "filme foda ",
-      "author": "Joao",
-      "avaliacao": "10",
-      "cartaz": "https://live.staticflickr.com/3647/3378392452_ff70787d79_b.jpg",
-      "genero": "adulto",
-      "cor": "vermelho",
-      "vizualiado": "Quero",
-      "nota": 1
+      "title": "Guardiões da Galáxia",
+      "descricao": "Agora já conhecidos como os Guardiões da Galáxia, os guerreiros viajam ao longo do cosmos e lutam para manter sua nova família unida. Enquanto isso tentam desvendar os mistérios da verdadeira paternidade de Peter Quill (Chris Pratt). compatível com App Movie Reading para pessoas com deficiência visual ou auditiva. Mais informações acesse https://www.cinemark.com.br/acessibilidade. ",
+      "author": "Filipe",
+      "avaliacao": "9",
+      "cartaz": "https://cinecriticas.com.br/wp-content/uploads/2023/05/Cine1-4.jpg",
+      "genero": "Aventura",
+      "cor": "livre",
+      "vizualiado": "Tenho",
+      "nota": 5
     },
     {
       "id": 6,
-      "title": "Harry potter ",
-      "descricao": "aventuta de um menino magico ",
-      "author": "Fulino",
-      "avaliacao": "Boa ",
-      "cartaz": "https://m.media-amazon.com/images/I/81IrvFQrwKL._AC_UF894,1000_QL80_.jpg",
-      "genero": "aventura ",
-      "cor": "vermelho",
+      "title": "Transformers: O Despertar das Feras",
+      "descricao": "Voltando à ação e ao espetáculo que conquistou pela primeira vez os espectadores de todo o mundo há 14 anos com os Transformers originais, Transformers: Rise of the Beasts levará o público a uma aventura mundial dos anos 90 e apresentará os Maximals, Predacons e Terrorcons à batalha existente em terra entre Autobots e Decepticons.",
+      "author": "Heitor",
+      "avaliacao": "8",
+      "cartaz": "https://br.web.img3.acsta.net/pictures/23/04/27/15/20/2468619.jpg",
+      "genero": "livre",
+      "cor": "livre",
+      "vizualiado": "Terminado",
+      "nota": 3
+    },
+    {
+      "id": 7,
+      "title": "Os Aventureiros - A Origem",
+      "descricao": "Luccas Neto, sua irmã Gi e seus amigos Vitória, Pedro e Jéssi não faziam ideia do que estava por vir na excursão da escola. Quando Luccas decide invadir o laboratório do recém desaparecido cientista Honório Flacksman, o grupo é sugado para um portal que os leva para outra dimensão – a Cidade da Alegria. Lá, eles são abordados por Catarina, chefe dos Guardiões, protetores da Cidade. Ela os interroga, suspeitando que estejam envolvidos no recente sumiço do mapa das Pedras do Poder",
+      "author": "Lucas Neto",
+      "avaliacao": "10",
+      "cartaz": "https://www.atoupeira.com.br/wp-content/uploads/2022/11/os-aventureiros-a-origem-poster.jpg",
+      "genero": "livre",
+      "cor": "veremlho",
+      "vizualiado": "Quero",
+      "nota": 4
+    },
+    {
+      "id": 8,
+      "title": "Elementos",
+      "descricao": "O filme acompanha uma dupla improvável, Ember e Wade, em uma cidade onde moradores do fogo, da água, da terra e do ar vivem juntos. A jovem fogosa e o cara que segue o fluxo estão prestes a descobrir algo elementar: o quanto eles realmente têm em comum. Acessibilidade compatível com App Movie Reading para pessoas com deficiência visual ou auditiva",
+      "author": "Gustavo",
+      "avaliacao": "7",
+      "cartaz": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2t--JGK48XJuX673bUh4kSlDwlJ7R3Qh5koYQZNGcQn9aoByB6AKuwxkOnZMy1TsrnF3VKZjPzf12CfVMmawl-ifLeNL2LBQajuA9So345zyWgdPpo2XrkP65wFn1GFp4rmYfwQoKXkCSOPEwnbwfTvTCxqka5PpVxJh9NBd_8uN2dbQvqaheLv4_Fw/s800/elmntl08.jpg",
+      "genero": "animação",
+      "cor": "verde",
+      "vizualiado": "Terminado",
+      "nota": 5
+    },
+    {
+      "id": 9,
+      "title": "Ruby Marinho - Monstro Adolescente",
+      "descricao": "Ruby é uma adolescente típica. Ela cresceu em uma cidade litorânea na Flórida. Como todos os adolescentes, ela tem vergonha de sua família. Mas, neste caso, Ruby tem um motivo especial para se envergonhar: ela vem de uma família de monstros marinhos! Ninguém na cidade sabe, mas a pobre Ruby tem medo de que algum dia a verdade seja revelada. O que seria então de sua vida social? ",
+      "author": "Paulo",
+      "avaliacao": "9",
+      "cartaz": "https://br.web.img2.acsta.net/pictures/23/03/16/17/14/0437364.jpg",
+      "genero": "animação",
+      "cor": "azul",
       "vizualiado": "Tenho",
-      "nota": 2
+      "nota": 6
     }
   ]
 }

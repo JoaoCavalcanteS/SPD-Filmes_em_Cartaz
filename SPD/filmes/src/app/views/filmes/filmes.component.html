@@ -11,6 +11,7 @@
 
 </div> -->
 
+<!-- Navbar com nome do cinema e icon de coração e compartilhar -->
 <p>
   <mat-toolbar color="primary">
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
@@ -43,13 +44,13 @@
             </button>
             <mat-menu #menu="matMenu">
               <button mat-menu-item>
-                <mat-icon>dialpad</mat-icon>
+                <mat-icon><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /></mat-icon>
                 <span (click)="selecionar(filme)">Atualizar {{filme.title}}</span>
               </button>
-              <button mat-menu-item disabled>
+              <!-- <button mat-menu-item disabled>
                 <mat-icon>voicemail</mat-icon>
                 <span>Check voice mail</span>
-              </button>
+              </button> -->
               <!-- <button mat-menu-item>
                 <mat-icon>notifications_off</mat-icon>
                 <span>Disable alerts</span>
@@ -60,9 +61,11 @@
         </mat-card-header>
         <img mat-card-image src="{{filme.cartaz}}" alt="Photo of a Shiba Inu">
         <mat-card-content>
-          <p row="1">
+          
+          <p>
             {{filme.descricao}}
           </p>
+
         </mat-card-content>
         <mat-card-actions>
           <!-- --------------------- -->
@@ -120,16 +123,17 @@
           <input type="number" [(ngModel)] = "filme.nota" placeholder="Nota">
         </mat-list-item>
 
+        <!-- Estilização do button -->
         <mat-list-item role="listitem">
-          <button (click)="cancelar()">voltar</button>
-          <button (click)="salvar()">Salvar</button>
-          <button (click)="remover(filme.id)"><b>remover</b></button>
+          <button mat-raised-button color="accent" (click)="cancelar()">voltar</button>
+          <button mat-raised-button color="primary" (click)="salvar()">Salvar</button>
+          <button id="buttonecluir" mat-raised-button color="warn" (click)="remover(filme.id)"><b>remover</b></button>
         </mat-list-item>
 
     </mat-list>
       <mat-card-actions>
-        <button mat-raised-button color="primary">Curtir</button>
-        <button mat-raised-button color="warn">Descrição</button>
+        <!-- <button mat-raised-button color="primary">Curtir</button>
+        <button mat-raised-button color="warn">Descrição</button> -->
       </mat-card-actions>
     </mat-card>
 
@@ -196,8 +200,8 @@
             </mat-list-item>
 
             <mat-list-item role="listitem">
-              <button (click)="cancelar()">cancelar</button>
-              <button (click)="salvar()">Salvar</button>
+              <button mat-button color="warn" (click)="cancelar()">cancelar</button>
+              <button mat-stroked-button color="primary" (click)="salvar()">Salvar</button>
             </mat-list-item>
 
         </mat-list>

@@ -1,7 +1,7 @@
 .example-card {
-    max-width: 400px;
+    max-width: 300px;
     min-width: 400px;
-    float: left;
+    float: right;
     margin:3%;
     margin-top: 10%;
   }
@@ -64,6 +64,21 @@
 }  */
 
 /* ------------------------------------ */
+/* ESTILOS DOS ICONS */
+/* ICON DE "MAIS"  */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* -------------------------------- */
+#buttonecluir{
+  margin-left:10%;
+}
+
 
 
 

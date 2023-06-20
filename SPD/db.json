@@ -23,42 +23,6 @@
       "cor": "livre",
       "vizualiado": "Tenho",
       "nota": 5
-    },
-    {
-      "id": 6,
-      "title": "Transformers: O Despertar das Feras",
-      "descricao": "Voltando à ação e ao espetáculo que conquistou pela primeira vez os espectadores de todo o mundo há 14 anos com os Transformers originais, Transformers: Rise of the Beasts levará o público a uma aventura mundial dos anos 90 e apresentará os Maximals, Predacons e Terrorcons à batalha existente em terra entre Autobots e Decepticons.",
-      "author": "Heitor",
-      "avaliacao": "8",
-      "cartaz": "https://br.web.img3.acsta.net/pictures/23/04/27/15/20/2468619.jpg",
-      "genero": "livre",
-      "cor": "livre",
-      "vizualiado": "Terminado",
-      "nota": 3
-    },
-    {
-      "id": 7,
-      "title": "Os Aventureiros - A Origem",
-      "descricao": "Luccas Neto, sua irmã Gi e seus amigos Vitória, Pedro e Jéssi não faziam ideia do que estava por vir na excursão da escola. Quando Luccas decide invadir o laboratório do recém desaparecido cientista Honório Flacksman, o grupo é sugado para um portal que os leva para outra dimensão – a Cidade da Alegria. Lá, eles são abordados por Catarina, chefe dos Guardiões, protetores da Cidade. Ela os interroga, suspeitando que estejam envolvidos no recente sumiço do mapa das Pedras do Poder",
-      "author": "Lucas Neto",
-      "avaliacao": "10",
-      "cartaz": "https://www.atoupeira.com.br/wp-content/uploads/2022/11/os-aventureiros-a-origem-poster.jpg",
-      "genero": "livre",
-      "cor": "veremlho",
-      "vizualiado": "Quero",
-      "nota": 4
-    },
-    {
-      "id": 8,
-      "title": "Elementos",
-      "descricao": "O filme acompanha uma dupla improvável, Ember e Wade, em uma cidade onde moradores do fogo, da água, da terra e do ar vivem juntos. A jovem fogosa e o cara que segue o fluxo estão prestes a descobrir algo elementar: o quanto eles realmente têm em comum. Acessibilidade compatível com App Movie Reading para pessoas com deficiência visual ou auditiva",
-      "author": "Gustavo",
-      "avaliacao": "7",
-      "cartaz": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2t--JGK48XJuX673bUh4kSlDwlJ7R3Qh5koYQZNGcQn9aoByB6AKuwxkOnZMy1TsrnF3VKZjPzf12CfVMmawl-ifLeNL2LBQajuA9So345zyWgdPpo2XrkP65wFn1GFp4rmYfwQoKXkCSOPEwnbwfTvTCxqka5PpVxJh9NBd_8uN2dbQvqaheLv4_Fw/s800/elmntl08.jpg",
-      "genero": "animação",
-      "cor": "verde",
-      "vizualiado": "Terminado",
-      "nota": 5
     }
   ]
 }

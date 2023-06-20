@@ -1,11 +1,11 @@
 .example-card {
     max-width: 300px;
     min-width: 400px;
-    float: right;
+    float: left;
     margin:3%;
     margin-top: 10%;
-    box-sizing: border-box;
-    display:inline-flex;
+    /* box-sizing: border-box;
+    display:inline-flex; */
   }
 
   .example-header-image {

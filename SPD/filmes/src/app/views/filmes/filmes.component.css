@@ -4,12 +4,14 @@
     float: right;
     margin:3%;
     margin-top: 10%;
+    box-sizing: border-box;
+    display:inline-flex;
   }
-  
+
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
-    
+
   }
 
   /* --------------------------------------------- */
@@ -21,10 +23,10 @@
     right: 1%;
     width: 10%;
   } */
-  
-  .example-disabled {
+
+  /* .example-disabled {
     display: inline-flex;
-  }
+  } */
 
   /* -------------------------------------------- */
 
@@ -43,7 +45,7 @@
   /* ----------------------------------------------- */
   .mat-mdc-form-field + .mat-mdc-form-field {
     margin-left: 8px;
-    
+
   }
 
   .mat-accordion{
@@ -79,6 +81,13 @@
   margin-left:10%;
 }
 
+.descricao{
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 16px;     /* fallback */
+   max-height: 32px;      /* fallback */
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
 
-
-
+}

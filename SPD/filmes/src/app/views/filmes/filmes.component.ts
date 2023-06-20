@@ -10,7 +10,7 @@ import { FilmesService } from 'src/app/service/filmes.service';
 })
 export class FilmesComponent implements OnInit{
       panelOpenState = false;
-      
+
       aberto = false;
 
       listaFilmes: Filmes[] = [];
@@ -18,6 +18,8 @@ export class FilmesComponent implements OnInit{
       filme = new Filmes();
 
       estaEditando = false;
+
+      desc='descricao';
 
       constructor(private filmesService: FilmesService) {}
       ngOnInit(): void {
@@ -72,23 +74,23 @@ export class FilmesComponent implements OnInit{
 
       cadastrar(on:boolean) {
         this.aberto = true;
-        
+
       }
 
-      
+
         step = 0;
-      
+
         setStep(index: number) {
           this.step = index;
         }
-      
+
         nextStep() {
           this.step++;
         }
-      
+
         prevStep() {
           this.step--;
         }
 
-        
+
 }
